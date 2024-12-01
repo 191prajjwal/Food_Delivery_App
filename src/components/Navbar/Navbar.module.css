@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 50px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Logo Container */
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* Navigation Links */
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Align nav links vertically */
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #ffffff;
+    background-color: #fc8a06;
+  }
+  
+  /* Active Link Styling */
+  .active {
+    color: #ffffff;
+    background-color: #fc8a06;
+  }
+  
+  /* Profile Link */
+  .profileLink {
+    background-color: #333;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 10px;
+  }
+  
+  .profileLink:hover {
+    background-color: #787373;
+  }
+  
+  .userImg {
+    width: 30px;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%; /* Full width for better alignment */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .profileLink {
+      align-self: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  

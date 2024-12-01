@@ -1,0 +1,116 @@
+/* Overall header styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA; 
+    padding-bottom: 10px;
+  }
+  
+
+  .topBanner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #ffffff; 
+    border-bottom: 1px solid #ddd; 
+  }
+  
+ 
+  .offerText {
+    font-size: 14px; 
+    color: #333; 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .promo {
+    font-weight: bold;
+    color: #fc8a06; 
+    margin-left: 5px;
+  }
+  
+
+  .locationCart {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+  }
+  
+
+  .location {
+    font-size: 14px; 
+    color: #555; 
+  }
+  
+ 
+  .changeLocation {
+    font-size: 14px;
+    color: #fc8a06; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .changeLocation:hover {
+    text-decoration: underline; 
+  }
+  
+
+  .cartDiv {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    background-color: #028643;
+    padding:5px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.2s ease, color 0.3s ease;
+    &:hover{
+        background-color: #045325;
+    }
+
+  }
+  
+
+  .cart {
+    width: 25px; 
+    height: auto; 
+  }
+  
+  .cartButton{
+    background-color: transparent;
+    border:none;
+    color: white;
+  }
+  
+  .downImg{
+    width:30px;
+  }
+  
+
+  
+  /* Responsive navbar adjustments */
+  @media (max-width: 768px) {
+    .topBanner {
+      flex-direction: column; /* Stack the banner items vertically */
+      align-items: flex-start; /* Align items to the left */
+      gap: 10px; /* Add spacing between stacked items */
+    }
+  
+    .locationCart {
+      flex-direction: column; /* Stack location and cart on mobile */
+      align-items: flex-start; /* Align items to the left */
+      gap: 5px;
+    }
+
+    .cartDiv{
+        background-color: #27ae60;
+    }
+  
+    .cartButton {
+      align-self: flex-start; /* Align cart button to the left */
+      width: 100%; /* Full width button for mobile */
+      text-align: center; /* Center text inside button */
+    }
+  }
+  
