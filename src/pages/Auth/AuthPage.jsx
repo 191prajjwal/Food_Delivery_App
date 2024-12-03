@@ -84,8 +84,8 @@ export default function AuthPage() {
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
-    setFormData({ name: "", phone: "", email: "", password: "" }); // Reset form data on toggle
-    setErrors({}); // Clear errors when toggling
+    setFormData({ name: "", phone: "", email: "", password: "" }); 
+    setErrors({}); 
   };
 
   return (
